@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "needs-seeding"
+version = "0.1.0"
+description = "Find the least seeded torrents on a website."
+authors = ["Agustín Covarrubias <agucova@uc.cl>"]
+license = "GPLv3"
+
+[tool.poetry.dependencies]
+python = ">=3.6.2"
+python-libtorrent-bin = "^2.0.2"
+typer = "^0.3.2"
+btdht = "^0.3.3"
+"bencode.py" = "^4.0.0"
+requests = "^2.25.1"
+bs4 = "^0.0.1"
+
+[tool.poetry.dev-dependencies]
+black = "^21.5b1"
+flake8 = "^3.9.2"
+
+[build-system]
+requires = ["setuptools", "poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
